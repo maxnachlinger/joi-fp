@@ -16,6 +16,9 @@ re-ordered for easier currying / partial application
 npm i joi-fp
 ```
 
+### What problem does this solve?
+When using functions like ``joi.validate()``, you will almost always have values for ``schema`` and/or ``options`` before you have the ``value`` being validated. This little library re-orders the arguments of ``joi.validate()``, ``joi.attempt()`` and ``joi.assert()`` allowing you to pass the data you have initially, well, initially :) This library also has a few versions of these functions with fixed arities to make currying and partial application easier.
+
 ### Quick Example
 ```javascript
 const _ = require('lodash')
