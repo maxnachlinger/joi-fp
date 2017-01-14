@@ -58,31 +58,31 @@ test('currying tests - simple schema', t => {
     [
       {
         desc: 'Required prop not supplied',
-        fx: () => validate({age: 12})({allowUnknown: false}),
+        fx: () => validate({allowUnknown: false})({age: 12}),
         ok: false,
         errorMsg: 'child "name" fails because ["name" is required]'
       },
       {
         desc: 'Required prop wrong type',
-        fx: () => validate({name: 12})({allowUnknown: false}),
+        fx: () => validate({allowUnknown: false})({name: 12}),
         ok: false,
         errorMsg: 'child "name" fails because ["name" must be a string]'
       },
       {
         desc: 'Required prop supplied, additional prop not allowed',
-        fx: () => validate({name: 'test', ago: 12})({allowUnknown: false}),
+        fx: () => validate({allowUnknown: false})({name: 'test', ago: 12}),
         ok: false,
         errorMsg: '"ago" is not allowed'
       },
       {
         desc: 'Required prop supplied, additional prop allowed',
-        fx: () => validate({name: 'test', age: 12})({allowUnknown: true}),
+        fx: () => validate({allowUnknown: true})({name: 'test', age: 12}),
         ok: true,
         value: {name: 'test', age: 12}
       },
       {
         desc: 'Required prop passed',
-        fx: () => validate({name: 'test'})({allowUnknown: false}),
+        fx: () => validate({allowUnknown: false})({name: 'test'}),
         ok: true,
         value: {name: 'test'}
       }
