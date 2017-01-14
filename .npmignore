@@ -1,0 +1,9 @@
+.DS_Store
+.idea
+*.iml
+*.log
+node_modules
+*.yml
+.npmignore
+.gitignore
+tests
