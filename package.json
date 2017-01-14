@@ -1,6 +1,6 @@
 {
   "name": "joi-fp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Provides a few wrappers around Joi's validate(), attempt() and assert() functions with their arguments re-ordered for easier currying / partial application",
   "main": "./lib/index.js",
   "scripts": {
