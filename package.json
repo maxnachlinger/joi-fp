@@ -1,0 +1,36 @@
+{
+  "name": "joi-fp",
+  "version": "0.0.1",
+  "description": "Provides a few wrappers around Joi's validate(), attempt() and assert() functions with their arguments re-ordered for easier currying / partial application",
+  "main": "./lib/index.js",
+  "scripts": {
+    "pretest": "./node_modules/.bin/standard --verbose | ./node_modules/.bin/snazzy",
+    "test": "./node_modules/.bin/tape ./tests/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maxnachlinger/joi-fp.git"
+  },
+  "keywords": [
+    "joi"
+  ],
+  "author": {
+    "name": "Max Nachlinger",
+    "url": "https://github.com/maxnachlinger"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maxnachlinger/joi-fp/issues"
+  },
+  "homepage": "https://github.com/maxnachlinger/joi-fp#readme",
+  "peerDependencies": {
+    "joi": "*"
+  },
+  "devDependencies": {
+    "joi": "^10.1.0",
+    "lodash": "^4.17.4",
+    "snazzy": "^6.0.0",
+    "standard": "^8.6.0",
+    "tape": "^4.6.3"
+  }
+}
