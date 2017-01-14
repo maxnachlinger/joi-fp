@@ -15,7 +15,8 @@
     "node": ">4.0.0"
   },
   "keywords": [
-    "joi"
+    "joi",
+    "functional programming"
   ],
   "author": {
     "name": "Max Nachlinger",
