@@ -21,17 +21,21 @@ npm i joi-fp
 const _ = require('lodash')
 const joi = require('joi-fp')(require('joi'))
 
-const validateName = _.curry(joi.validateFp2)({
-  name: joi.string().required()
-})
-
-validateName({name: 'Max'}) // { error: null, value: { name: 'Max' } }
-
+// example with currying
 const validateInput = _.curry(joi.validateFp3)({
   name: joi.string().required()
 })({allowUnknown: true});
 
 validateInput({name: 'Max', color: 'blue'}) // { error: null, value: { name: 'Max', color: 'blue' } }
+
+// example with partial application
+const validateInputAgain = _.partial(joi.validateFp, {
+  name: joi.string().required()
+}, {allowUnknown: true});
+
+validateInputAgain({name: 'Max', color: 'blue'}, (err, value) => {
+  console.log(err, value) // null { name: 'Max', color: 'blue' }
+})
 ```
 
 ### Functions
