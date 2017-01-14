@@ -42,12 +42,12 @@ validateInputAgain({name: 'Max', color: 'blue'}, (err, value) => {
 ```javascript
 // fixed arity for easy currying / partial application
 validateFp2 (schema, value)
-validateFp3 (schema, optsOrValue, optsOrCb)
+validateFp3 (schema, optionsOrValue, optionsOrCallback)
 validateFp (schema, options, value, callback)
 
 attemptFp2 (schema, value)
 attemptFp (schema, message, value)
 
-assertFp2 (schema, message, value)
+assertFp2 (schema, value)
 assertFp (schema, message, value)
 ```
