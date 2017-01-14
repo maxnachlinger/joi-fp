@@ -11,6 +11,9 @@
     "type": "git",
     "url": "git+https://github.com/maxnachlinger/joi-fp.git"
   },
+  "engines": {
+    "node": ">4.0.0"
+  },
   "keywords": [
     "joi"
   ],
