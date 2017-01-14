@@ -9,9 +9,8 @@ test('currying tests - simple schema', t => {
   }
 
   t.test('validateFp2', t => {
-    const validate = _.curry(joi.validateFp2)(simpleSchema);
-
-    [
+    const validate = _.curry(joi.validateFp2)(simpleSchema)
+    const tests = [
       {
         desc: 'Required prop not supplied',
         fx: () => validate({age: 12}),
@@ -36,7 +35,8 @@ test('currying tests - simple schema', t => {
         ok: true,
         value: {name: 'test'}
       }
-    ].forEach((o) => {
+    ]
+    tests.forEach((o) => {
       const result = o.fx()
 
       if (o.ok) {
@@ -53,9 +53,8 @@ test('currying tests - simple schema', t => {
   })
 
   t.test('validateFp3', t => {
-    const validate = _.curry(joi.validateFp3)(simpleSchema);
-
-    [
+    const validate = _.curry(joi.validateFp3)(simpleSchema)
+    const tests = [
       {
         desc: 'Required prop not supplied',
         fx: () => validate({allowUnknown: false})({age: 12}),
@@ -86,7 +85,8 @@ test('currying tests - simple schema', t => {
         ok: true,
         value: {name: 'test'}
       }
-    ].forEach((o) => {
+    ]
+    tests.forEach((o) => {
       const result = o.fx()
 
       if (o.ok) {
