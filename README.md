@@ -29,7 +29,8 @@ const validateInput = _.curry(joi.validateFp3)({
   name: joi.string().required()
 })({allowUnknown: true});
 
-validateInput({name: 'Max', color: 'blue'}) // { error: null, value: { name: 'Max', color: 'blue' } }
+validateInput({name: 'Max', color: 'blue'})
+// { error: null, value: { name: 'Max', color: 'blue' } }
 
 // example with partial application
 const validateInputAgain = _.partial(joi.validateFp, {
