@@ -5,9 +5,12 @@ re-ordered for easier currying / partial application
 
 [![travis][travis-image]][travis-url]
 [![standard][standard-image]][standard-url]
+[![npm][npm-image]][npm-url]
 
 [travis-image]: https://travis-ci.org/maxnachlinger/joi-fp.svg?branch=master
 [travis-url]: https://travis-ci.org/maxnachlinger/joi-fp
+[npm-image]: https://img.shields.io/npm/v/joi-fp.svg?style=flat
+[npm-url]: https://npmjs.org/package/joi-fp
 [standard-image]: https://img.shields.io/badge/code%20style-standard-brightgreen.svg
 [standard-url]: http://standardjs.com/
 
