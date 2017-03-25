@@ -1,4 +1,4 @@
-#joi-fp
+# joi-fp
 
 Provides a few wrappers around Joi's ``validate()``, ``attempt()`` and ``assert()`` functions with their arguments 
 re-ordered for easier currying / partial application
