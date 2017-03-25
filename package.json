@@ -31,10 +31,10 @@
     "joi": "*"
   },
   "devDependencies": {
-    "joi": "^10.1.0",
+    "joi": "^10.3.0",
     "lodash": "^4.17.4",
     "snazzy": "^6.0.0",
-    "standard": "^8.6.0",
+    "standard": "^9.0.2",
     "tape": "^4.6.3"
   }
 }
